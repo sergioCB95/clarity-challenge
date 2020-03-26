@@ -1,13 +1,30 @@
 package com.sergio;
 
+import com.sergio.data.InputArgs;
+import com.sergio.logic.ProcessDispatcher;
+import com.sergio.data.manager.InputArgsDataManager;
+
+
 /**
- * Hello world!
- *
+ * App class
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        try {
+            // Getting input arguments
+            InputArgs inputArgs = InputArgsDataManager
+                    .getInstance()
+                    .parseArgs(args);
+
+            if (!inputArgs.isHelp()) {
+                // Dispatching process
+                new ProcessDispatcher(inputArgs).dispatch();
+            }
+
+        } catch(Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }
