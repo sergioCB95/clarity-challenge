@@ -25,11 +25,15 @@ For simplicity, the results obtained will be displayed on the console.
 
 ##Running Application
 
-To simplify testing, clarity.jar file is already added to the repository. 
+To compile and run the application you need to install: 
+1. Java JDK (https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) and add it to the path.
+2. Maven (https://maven.apache.org/download.cgi) and add it to the path (https://maven.apache.org/install.html).
 
-You only need to have the Java JRE (https://www.java.com/es/download/) installed in your computer.
+Then move to the root dir of the project and run `mvn clean install` wich will build the project.
 
-From the root dir of the project, you can execute `java -jar clarity.jar <args>` and the application will be executed.
+A folder called target will be generated. Inside of it there will be a clarity\<version\>.jar file with the compiled project.
+
+Then, you just need to run `java -jar clarity<version>.jar <args>` and the application will be executed.
 
 ## Argumentos de la aplicación
 
