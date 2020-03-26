@@ -84,7 +84,7 @@ public class ProcessDispatcher {
      * @throws IOException
      */
     public void execProcess(ProcessFunction func) throws IOException {
-        execProcess(func, new AtomicBoolean());
+        execProcess(func, new AtomicBoolean(true));
     }
 
     /**

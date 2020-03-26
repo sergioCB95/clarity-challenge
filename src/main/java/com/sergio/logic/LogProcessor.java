@@ -134,7 +134,7 @@ public class LogProcessor {
      * Prints in console all hosts connected to the configured host
      */
     public void printSendingConnectionHostInfo() {
-        System.out.println("Hosts connected from " + hostname);
+        System.out.println("Hosts sending connection to " + hostname);
         sendingConnectionHosts.forEach((key, value) -> System.out.println(key));
     }
 
@@ -144,8 +144,8 @@ public class LogProcessor {
     public void printAllConectionHostInfo() {
         System.out.println("Host with most connections: " + hostnameMaxCountKey + " with " + hostnameMaxCountValue);
 
-        System.out.println("Hosts sending connection to " + hostname);
-        sendingConnectionHosts.forEach((key, value) -> System.out.println(key));
+        System.out.println("Hosts receiving connection from " + hostname);
+        receivingConnectionHosts.forEach((key, value) -> System.out.println(key));
 
         printSendingConnectionHostInfo();
     }

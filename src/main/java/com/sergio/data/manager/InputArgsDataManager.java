@@ -109,7 +109,7 @@ public class InputArgsDataManager {
             cmd = parser.parse(options, args);
 
             // if help, print help and stop
-            if (cmd.hasOption(InputArgNames.HELP.getValue())) {
+            if (cmd.hasOption(InputArgNames.HELP.getValue()) || cmd.getOptions().length == 0) {
                 inputArgs.setHelp(true);
                 printHelp();
             } else {
