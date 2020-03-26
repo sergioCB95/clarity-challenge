@@ -35,9 +35,9 @@ A folder called target will be generated. Inside of it there will be a clarity\<
 
 Then, you just need to run `java -jar clarity<version>.jar <args>` and the application will be executed.
 
-## Argumentos de la aplicación
+## App Arguments
 
-Para ejecutar la aplicación, es necesario especificar una serie de argumentos de entrada.
+To run the application, you need to specify a series of input arguments.
 
 | Long Name                    | Short name       | Required | Description                                                                                                                             |
 | -----------------------------|------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------|
